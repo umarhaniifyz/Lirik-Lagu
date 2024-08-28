@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireflies Lyrics</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">Lirik Lagu by Justin Bieber</h1>
+        <audio id="song" controls class="fade-in">
+            <source src="Justin Bieber - Baby.mp3" type="audio/mpeg">t.
+        </audio>
+       <button id="toggle-button" class="fade-in">Show Lyrics</button>
+        <div id="lyrics" class="fade-in" style="display: none;">
+            <p id="line1">You know you love me, I know you care</p>
+            <p id="line2">Just shout whenever, and I'll be there</p>
+            <p id="line3">You want my love, you want my heart</p>
+            <p id="line4">And we will never, ever, ever be apart</p>
+            <p id="line5">Are we an item? Girl, quit playing</p>
+            <p id="line6">We're just friends, what are you saying?</p>
+            <p id="line7">Said there's another, look right in my eyes</p>
+            <p id="line8">My first love broke my heart for the first time</p>
+            <p id="line9">And I was like</p>
+            <p id="line10">Baby, baby, baby, oh</p>
+            <p id="line11">Like baby, baby, baby, no</p>
+            <p id="line12">Like baby, baby, baby, oh</p>
+            <p id="line13">Thought you'd always be mine, mine</p>
+            <p id="line14">For you, I would have done whatever</p>
+            <p id="line15">And I just can't believe we ain't together</p>
+            <p id="line16">And I wanna play it cool, but I'm losin' you</p>
+            <p id="line17">I'll buy you anything, I'll buy you any ring</p>
+            <p id="line18">And I'm in pieces, baby fix me</p>
+            <p id="line19">And just shake me 'til you wake me from this bad dream</p>
+            <p id="line20">I'm going down, down, down, down</p>
+            <p id="line21">And I just can't believe my first love won't be around</p>
+            <p id="line22">And I'm like</p>
+            <p id="line23">Baby, baby, baby, oh</p>
+            <p id="line24">Like baby, baby, baby, no</p>
+            <p id="line25">Like baby, baby, baby, oh</p>
+            <p id="line26">Thought you'd always be mine, mine</p>
+            <!-- Tambahkan lebih banyak lirik sesuai kebutuhan -->
+        </div>
+    </div>
+    <script src="script.js">
+        document.getElementById('toggle-button').addEventListener('click', function() {
+    const lyrics = document.getElementById('lyrics');
+    if (lyrics.style.display === 'none' || lyrics.style.display === '') {
+        lyrics.style.display = 'block';
+        this.innerText = 'Hide Lyrics';
+    } else {
+        lyrics.style.display = 'none';
+        this.innerText = 'Show Lyrics';
+    }
+});
+
+    </script>
+</body>
+</html>
